@@ -1,0 +1,7 @@
+﻿  Level.cpp
+C:\Users\crook\source\repos\project1\SpartyCrossing\Boat.h(88,34): warning C4244: 'return': conversion from 'const double' to 'float', possible loss of data
+C:\Users\crook\source\repos\project1\SpartyCrossing\Car.h(108,34): warning C4244: 'return': conversion from 'const double' to 'float', possible loss of data
+C:\Users\crook\source\repos\project1\SpartyCrossing\Level.cpp(291,49): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\crook\source\repos\project1\SpartyCrossing\Level.cpp(291,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\crook\source\repos\project1\SpartyCrossing\Level.cpp(311,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\crook\source\repos\project1\SpartyCrossing\Level.cpp(311,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
