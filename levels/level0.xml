@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level>
+
+  <types>
+    <decor id="s001" image="sidewalk1.png"/>
+  </types>
+  <background>
+    <decor id="s001" x="0" y="0" repeat-x="16" repeat-y="2"/>
+    <decor id="s001" x="0" y="14" repeat-x="16" repeat-y="2"/>
+  </background>
+  <hero image="sparty.png" name="Sparty" hit-image="sparty-hit.png"/>
+
+</level>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level>
+  <types>
+    <decor id="s001" image="sidewalk1.png"/>
+    <decor id="s002" image="sidewalk2.png"/>
+    <decor id="r001" image="river.png"/>
+    <decor id="r002" image="road1.png"/>
+    <decor id="grass" image="grass1.png"/>
+    <car id="ohio" name="Ohio" image1="invaderOSa.png" image2="invaderOSb.png"/>
+    <car id="iowa" name="Iowa" image1="invaderIa.png" image2="invaderIb.png"/>
+    <car id="nebraska" name="Nebraska" image1="invaderNa.png" image2="invaderNb.png"/>
+    <car id="wisc" name="Wisconsin" image1="invaderWa.png" image2="invaderWb.png"/>
+    <boat id="b2" image="green-raft.png"/>
+    <boat id="b4c" image="green-canoe.png"/>
+    <boat id="b3c" image="yellow-boat.png"/>
+    <boat id="b3b" image="red-boat.png"/>
+    <boat id="b3r" image="red-raft.png"/>
+  </types>
+
+  <background>
+    <decor id="s001" x="0" y="0" repeat-x="16" repeat-y="2"/>
+    <decor id="r002" x="0" y="2" repeat-x="16" repeat-y="2"/>
+    <decor id="r001" x="0" y="4" repeat-x="16" repeat-y="3"/>
+    <decor id="grass" x="0" y="7" repeat-x="16" repeat-y="2"/>
+    <decor id="r001" x="0" y="9" repeat-x="16" repeat-y="3"/>
+    <decor id="r002" x="0" y="12" repeat-x="16" repeat-y="2"/>
+    <decor id="s002" x="0" y="14" repeat-x="16" repeat-y="2"/>
+
+    <rect color="255,240,0" x="0.15" y="3" height="0.0625" width="0.7" repeat-x="16" repeat-y="1"/>
+    <rect color="255,240,0" x="0.15" y="13" height="0.0625" width="0.7" repeat-x="16" repeat-y="1"/>
+
+    <rect color="255,240,0" x="0" y="2" height="0.0625" width="16"/>
+    <rect color="255,240,0" x="0" y="4" height="0.0625" width="16"/>
+    <rect color="255,240,0" x="0" y="12" height="0.0625" width="16"/>
+    <rect color="255,240,0" x="0" y="14" height="0.0625" width="16"/>
+
+    <rect color="150,150,150" x="0" y="7" height="0.0625" width="16"/>
+    <rect color="150,150,150" x="0" y="9" height="0.0625" width="16"/>
+  </background>
+
+  <hero image="sparty.png" name="Sparty" hit-image="sparty-hit.png" mask="sparty-mask.png"/>
+  <cargo id="grain" x="10.5" name="Grain" image="grain.png" carried-image="grain-carried.png"/>
+  <cargo id="goose" x="7.5" name="Goose" image="goose.png" carried-image="goose-carried.png" eats="grain"/>
+  <cargo id="fox" x="4.5" name="Fox" image="fox.png" carried-image="fox-carried.png" eats="goose"/>
+  <wolverine id="wolv" name="wolverine" image="wolverine.png" x="7.5" y="7.5" y-min="7.5" y-max="8.5" x-min="0" x-max="16"/>
+
+  <river y="4" speed="1.5" width="25">
+    <boat id="b2" x="7"/>
+    <boat id="b3b" x="13"/>
+  </river>
+
+  <river  y="5" speed="-4" width="30">
+    <boat id="b2" x="3"/>
+    <boat id="b4c" x="12"/>
+  </river>
+
+  <river  y="6" speed="3" width="23">
+    <boat id="b3r" x="7"/>
+    <boat id="b2" x="13"/>
+  </river>
+
+  <river  y="9" speed="2.5" width="30">
+    <boat id="b3c" x="7"/>
+    <boat id="b4c" x="20"/>
+  </river>
+
+  <river  y="10" speed="5.5" width="25">
+    <boat id="b3b" x="7"/>
+    <boat id="b3r" x="16"/>
+  </river>
+
+  <river  y="11" speed="-1.5" width="30">
+    <boat id="b3b" x="5"/>
+    <boat id="b4c" x="14"/>
+  </river>
+
+  <road y="2" speed="3" width="20">
+    <car id="iowa" x="4"/>
+    <car id="nebraska" x="14" swap-time="0.5"/>
+  </road>
+
+  <road y="3" speed="-16" width="40">
+    <car id="wisc" x="20"/>
+  </road>
+
+  <road y="12" speed="12" width="25">
+    <car id="iowa" x="10"/>
+    <car id="nebraska" x="1" swap-time="0.5"/>
+  </road>
+
+  <road y="13" speed="-1.5" width="18">
+    <car id="iowa" x="10"/>
+    <car id="ohio" x="14" swap-time="0.5"/>
+  </road>
+</level>

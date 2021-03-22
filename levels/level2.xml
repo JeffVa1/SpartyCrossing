@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level>
+
+  <types>
+    <decor id="s001" image="sidewalk1.png"/>
+    <decor id="s002" image="sidewalk2.png"/>
+    <decor id="r001" image="river.png"/>
+    <decor id="r002" image="road1.png"/>
+    <decor id="grass" image="grass1.png"/>
+    <car id="michigan" name="Michigan" width="2" image1="invaderUMa.png" image2="invaderUMb.png"/>
+    <car id="ohio" name="Ohio" width="2" image1="invaderOSa.png" image2="invaderOSb.png"/>
+    <car id="iowa" name="Iowa" width="2" image1="invaderIa.png" image2="invaderIb.png"/>
+    <car id="nebraska" name="Nebraska" width="3" image1="invaderNa.png" image2="invaderNb.png"/>
+    <car id="wisc" name="Wisconsin" width="2" image1="invaderWa.png" image2="invaderWb.png"/>
+    <boat id="b2" width="2" image="green-raft.png"/>
+    <boat id="b4c" width="4" image="green-canoe.png"/>
+    <boat id="b3c" width="4" image="yellow-boat.png"/>
+    <boat id="b3b" width="3" image="red-boat.png"/>
+    <boat id="bpp" width="3" image="purple-power-boat.png"/>
+    <boat id="b3r" width="3" image="red-raft.png"/>
+    <boat id="duck1" width="1" image="mallard-drake.png"/>
+    <boat id="duck2" width="1" image="mallard-hen.png"/>
+  </types>
+  <background>
+    <decor id="s001" x="0" y="0" repeat-x="16" repeat-y="2"/>
+    <decor id="r001" x="0" y="2" repeat-x="16" repeat-y="2"/>
+    <decor id="grass" x="0" y="4" repeat-x="16" repeat-y="1"/>
+    <decor id="r002" x="0" y="5" repeat-x="16" repeat-y="3"/>
+    <rect color="255,240,0" x="0" y="5" height="0.0625" width="16"/>
+    <rect color="255,240,0" x="0.15" y="6" height="0.0625" width="0.7" repeat-x="16" repeat-y="2"/>
+    <decor id="grass" x="0" y="8" repeat-x="16" repeat-y="1"/>
+    <rect color="255,240,0" x="0" y="8" height="0.0625" width="16"/>
+    <decor id="r001" x="0" y="9" repeat-x="16" repeat-y="3"/>
+    <decor id="r002" x="0" y="12" repeat-x="16" repeat-y="3" />
+    <rect color="255,255, 255" x="0" y="12" height="0.0625" width="16"/>
+    <rect color="255,255, 255" x="0.15" y="13" height="0.0625" width="0.7" repeat-x="16" repeat-y="1"/>
+    <decor id="s001" x="0" y="14" repeat-x="16" repeat-y="2"/> 
+    <rect color="255,255, 255" x="0" y="14" height="0.0625" width="16"/>
+    <rect color="0, 0, 0" x="0" y="2" height="0.0625" width="16"/>
+    <rect color="0, 0, 0" x="0" y="4" height="0.0625" width="16"/>
+    <rect color="0, 0, 0" x="0" y="9" height="0.0625" width="16"/>
+  </background>
+  <hero image="sparty.png" name="Sparty" hit-image="sparty-hit.png"/>
+  <cargo id="buckeye" x="7.5" name="Buckeye" image="buckeye.png" carried-image="buckeye-carried.png"/>
+  <cargo id="gopher" x="10.5" name="Gopher" image="gopher.png" carried-image="gopher-carried.png" eats="buckeye"/>
+  <cargo id="badger" x="4.5" name="Badger" image="badger.png" carried-image="badger-carried.png" eats="gopher"/>
+  <river y="2" speed="1.5" width="20">
+    <boat id="b2" x="7"/>
+    <boat id="b3b" x="12"/>
+  </river>
+  <river y="3" speed="-4.5" width="20">
+    <boat id="b2" x="7"/>
+    <boat id="b3c" x="12"/>
+  </river>
+  <river y="9" speed="-4.1" width="20">
+    <boat id="bpp" x="7"/>
+    <boat id="b4c" x="20"/>
+  </river>
+  <river y="10" speed="2" width="20">
+    <boat id="b2" x="7"/>
+    <boat id="b3b" x="12"/>
+  </river>
+  <river y="11" speed="-1.5" width="25">
+    <boat id="duck1" x="4"/>
+    <boat id="duck2" x="5"/>
+    <boat id="duck2" x="6"/>
+    <boat id="duck2" x="7"/>
+  
+    <boat id="duck1" x="17"/>
+    <boat id="duck2" x="18"/>
+    <boat id="duck2" x="19"/>
+  </river>
+
+  <road y="5" speed="-2" width="18">
+    <car id="michigan" x="2"/>
+    <car id="ohio" x="6" swap-time="0.3"/>
+  </road>
+  <road y="6" speed="3" width="20">
+    <car id="iowa" x="4"/>
+    <car id="nebraska" x="14" swap-time="0.3"/>
+  </road>
+  <road y="7" speed="-12" width="40">
+    <car id="wisc" x="20"/>
+  </road>
+  <road y="12" speed="4" width="25">
+    <car id="iowa" x="10"/>
+    <car id="nebraska" x="1" swap-time="0.3"/>
+  </road>
+  <road y="13" speed="-1.5" width="18">
+    <car id="michigan" x="5"/>
+    <car id="ohio" x="14" swap-time="0.3"/>
+  </road>
+
+</level>
